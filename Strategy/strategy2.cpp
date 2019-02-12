@@ -29,7 +29,7 @@ public:
 
 
 
-//À©Õ¹
+//æ‰©å±•
 //*********************************
 class FRTax : public TaxStrategy{
 public:
@@ -44,7 +44,7 @@ private:
     TaxStrategy* strategy;
 
 public:
-    // ¹¤³§Ä£Ê½
+    // Å¡Â¤Å‚Â§Ã„ÅÄ˜Ë
     SalesOrder(StrategyFactory* strategyFactory){
         this->strategy = strategyFactory->NewStrategy();
     }
@@ -57,7 +57,7 @@ public:
         Context context();
         
         double val = 
-            strategy->Calculate(context); //¶àÌ¬µ÷ÓÃ
+            strategy->Calculate(context); //å¤šæ€è°ƒç”¨
         //...
     }
     
