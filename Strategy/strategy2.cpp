@@ -44,7 +44,7 @@ private:
     TaxStrategy* strategy;
 
 public:
-    // š¤ł§ÄŁĘ˝
+    //工厂模式
     SalesOrder(StrategyFactory* strategyFactory){
         this->strategy = strategyFactory->NewStrategy();
     }
