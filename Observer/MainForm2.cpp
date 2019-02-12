@@ -1,3 +1,4 @@
+/*Concreate Observer*/
 class MainForm : public Form, public IProgress
 {
 	TextBox* txtFilePath;
@@ -29,6 +30,7 @@ public:
 	}
 };
 
+/*Concreate Observer*/
 class ConsoleNotifier : public IProgress {
 public:
 	virtual void DoProgress(float value){
