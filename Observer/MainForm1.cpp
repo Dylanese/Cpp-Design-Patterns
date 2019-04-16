@@ -2,7 +2,7 @@ class MainForm : public Form
 {
 	TextBox* txtFilePath;
 	TextBox* txtFileNumber;
-	ProgressBar* progressBar;
+	ProgressBar* progressBar;  //依赖一个抽象类，松耦合。
 
 public:
 	void Button1_Click(){
