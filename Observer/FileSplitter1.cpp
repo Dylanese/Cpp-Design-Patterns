@@ -21,7 +21,7 @@ public:
 			//...
 			float progressValue = m_fileNumber;
 			progressValue = (i + 1) / progressValue;
-			m_progressBar->setValue(progressValue);
+			m_progressBar->setValue(progressValue);  //紧耦合，依赖于一个具体的类。
 		}
 
 	}
